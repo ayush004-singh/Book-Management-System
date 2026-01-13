@@ -1,6 +1,6 @@
 package com.secondprogram.secondprogram.Controller;
 
-import java.util.Map;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -17,7 +17,7 @@ import com.secondprogram.secondprogram.Service.BookService;
 
 
 @RestController //Recieve Calls from the client | --> Forward to Service Layer
-@RequestMapping("books")
+@RequestMapping("/books")
 public class BookController { 
 
 // //Object of Service Layer--> In jvm
@@ -30,9 +30,8 @@ public class BookController {
 BookService bookservice;
 
 // Getting all books
-@SuppressWarnings("rawtypes")
 @GetMapping
-public Map getAllBooks() {
+public  List<Book> getAllBooks() {
     return bookservice.getAllBooks();
 }
 

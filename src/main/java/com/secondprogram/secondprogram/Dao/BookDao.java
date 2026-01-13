@@ -1,10 +1,9 @@
-package com.secondprogram.secondprogram.Service;
+package com.secondprogram.secondprogram.Dao;
 
 import java.util.List;
-
 import com.secondprogram.secondprogram.Model.Book;
 
-public interface BookService {
+public interface BookDao {
     List<Book> getAllBooks();
     Book getBookById(int id);
     Book addBook(Book book);
