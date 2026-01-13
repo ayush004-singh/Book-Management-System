@@ -1,5 +1,4 @@
 
-
 package com.secondprogram.secondprogram.Model;
 
 // Model Class --> Book Entity || Used to represent Book Object and its properties 
@@ -10,10 +9,7 @@ public class Book {
     private String title;
     private String author;
     public Book() {
-    }
 
-    public Book(int aInt, String string, String string0) {
-        throw new UnsupportedOperationException("Not supported yet.");
     }
     public int getId() {
         return id;
