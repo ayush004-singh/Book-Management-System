@@ -1,5 +1,5 @@
 
-package com.secondprogram.secondprogram.Model;
+package com.secondprogram.BookManagement.Model;
 
 // Model Class --> Book Entity || Used to represent Book Object and its properties 
 // Used in Service Layer and Controller Layer and for spring data binding

@@ -1,7 +1,8 @@
-package com.secondprogram.secondprogram.Dao;
+package com.secondprogram.BookManagement.Dao;
 
 import java.util.List;
-import com.secondprogram.secondprogram.Model.Book;
+
+import com.secondprogram.BookManagement.Model.Book;
 
 public interface BookDao {
     List<Book> getAllBooks();

@@ -1,4 +1,4 @@
-package com.secondprogram.secondprogram.Dao;
+package com.secondprogram.BookManagement.Dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -9,13 +9,13 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import com.secondprogram.secondprogram.Model.Book;
+import com.secondprogram.BookManagement.Model.Book;
 
 @Repository
 public class BookDaoImpl {
 
     @Autowired
-    private JdbcTemplate jdbcTemplate;
+    private JdbcTemplate jdbcTemplate;   
 
     // public BookRepository(JdbcTemplate jdbcTemplate) {
     //     this.jdbcTemplate = jdbcTemplate;
@@ -37,7 +37,7 @@ public class BookDaoImpl {
     });
    }
 
-    // Get book by id
+    // Get book by id58/
     @SuppressWarnings("Convert2Lambda")
     public Book getBookById(int id) {
         String sql = "select * from book where id = ?";

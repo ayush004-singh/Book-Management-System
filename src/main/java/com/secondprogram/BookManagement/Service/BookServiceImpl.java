@@ -1,18 +1,18 @@
-package com.secondprogram.secondprogram.Service;
+package com.secondprogram.BookManagement.Service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.secondprogram.secondprogram.Dao.BookDaoImpl;
-import com.secondprogram.secondprogram.Model.Book;
+import com.secondprogram.BookManagement.Dao.BookDaoImpl;
+import com.secondprogram.BookManagement.Model.Book;
 
 @Service
 public class BookServiceImpl implements BookService {
 
     @Autowired
-    private BookDaoImpl myRepo;
+    BookDaoImpl myRepo;
 
     @Override
     public List<Book> getAllBooks() {

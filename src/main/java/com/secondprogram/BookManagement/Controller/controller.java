@@ -1,4 +1,4 @@
-package com.secondprogram.secondprogram.Controller;
+package com.secondprogram.BookManagement.Controller;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
